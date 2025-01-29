@@ -37,7 +37,33 @@ namespace COMP003A.LectureActivity3_2
                 reverse--;
             }
 
+            // Display fibbonacci series using a do-while loop
+            Console.WriteLine("\nFibonacci Series");
+            int firstNumber = 0, secondNumber = 1, nextNumber; //First 2 numbers
+            Console.Write($"{firstNumber} {secondNumber} "); //display first 2 numbers
+            int count = 2; //Count starts at 2
+            // Loop to generate next 10 numbers in the series
+            do
+            {
+                nextNumber = firstNumber + secondNumber; //Calc Next number
+                Console.Write($"{nextNumber} "); //display next number
+                firstNumber = secondNumber;
+                secondNumber = nextNumber; //updates
+                count++;
+            } while (count > 10);    //loop until count = 10
 
+            //Display favorite fruits in a collection using a foreach loop 
+            //Create an array of fruits | datat structure preview
+            string[] fruits = { "Apple", "Bannana", "Pear", "Strawberry" };
+
+            Console.Writeline("\n");
+            //Display Each Fruit using foreach loop
+            Console.Writeline("your favorite fruits are :");
+            //loop each fruit in array
+            foreach (string fruit in fruits)
+            {
+                Console.WriteLine($"- {fruit}");
+            }
         }
     }
 }
