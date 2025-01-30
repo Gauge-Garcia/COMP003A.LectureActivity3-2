@@ -56,9 +56,9 @@ namespace COMP003A.LectureActivity3_2
             //Create an array of fruits | datat structure preview
             string[] fruits = { "Apple", "Bannana", "Pear", "Strawberry" };
 
-            Console.Writeline("\n");
+            Console.WriteLine("\n");
             //Display Each Fruit using foreach loop
-            Console.Writeline("your favorite fruits are :");
+            Console.WriteLine("your favorite fruits are :");
             //loop each fruit in array
             foreach (string fruit in fruits)
             {
